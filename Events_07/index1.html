@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(19, 17, 17) ;color: white">
+    
+    <h1 style="position: relative;"> Listen Sneha Gupta</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("saket");
+    // },2000)
+    const saySaket = function(){
+        console.log("saket");
+    }
+    const changeText = function(){
+    document.querySelector('h1').innerHTML
+    ="Saket Ranjan Chaubey is ........"
+    }
+    const changeMe = setTimeout(changeText,2000)
+
+    const changeText1 = function(){
+    document.querySelector('h1').innerHTML
+    ="In Love With YOU ......... "
+    }
+    const changeText2 = function(){
+    document.querySelector('h1').innerHTML
+    ="Samjhi Meri Misti Malai...............😘😘😘 "
+    }
+    setTimeout(changeText1,4000)
+    setTimeout(saySaket,3000)
+    setTimeout(changeText2,7000)
+    document.querySelector('#stop').
+    addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+    })
+
+</script>
+</html> 
